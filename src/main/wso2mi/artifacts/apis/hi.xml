@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api xmlns="http://ws.apache.org/ns/synapse" name="hi" context="/hi">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>
+                    {
+                        "message": "hi everyone"
+                    }
+                </format>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <faultSequence>
+            <log level="custom">
+                <property name="CustomError" expression="get-property('ERROR_MESSAGE')"/>
+            </log>
+            <respond/>
+        </faultSequence>
+    </resource>
+</api>
