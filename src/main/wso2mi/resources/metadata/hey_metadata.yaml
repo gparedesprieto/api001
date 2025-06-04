@@ -1,0 +1,10 @@
+---
+key: "hey-1.0.0"
+name : "hey"
+displayName : "hey"
+description: "hey"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/api/pe/hey"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false

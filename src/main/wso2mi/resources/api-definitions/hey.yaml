@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: hey
+  description: API Definition of hey
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/api/pe/hey
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response

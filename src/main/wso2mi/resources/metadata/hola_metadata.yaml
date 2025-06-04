@@ -1,0 +1,10 @@
+---
+key: "hola-1.0.0"
+name : "hola"
+displayName : "hola"
+description: "hola"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/hola"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
